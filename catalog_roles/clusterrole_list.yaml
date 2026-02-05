@@ -1,0 +1,8 @@
+cluster-reader: {}
+configmap-reader: {}
+monitoring: {}
+monitoring-endpointslices: {}
+aggregate-cron-tabs-edit: {}
+aggregate-cron-tabs-view: {}
+system:discovery: {}
+system:public-info-viewer: {}
