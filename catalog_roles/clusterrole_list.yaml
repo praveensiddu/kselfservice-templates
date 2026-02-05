@@ -1,3 +1,4 @@
+system:openshift:scc:nonroot-v2: {}
 cluster-reader: {}
 configmap-reader: {}
 monitoring: {}
