@@ -1,12 +1,16 @@
 #These rules will be appended to all namespaces created in dev kubernetes clusters
-- egressType: dnsName
-  egressValue: centralizedlogging.dev.mycompany.com
-- egressType: dnsName
-  egressValue: vault.dev.mycompany.com
-- egressType: dnsName
-  egressValue: metrics.dev.mycompany.com
-- egressType: cidrSelector
-  egressValue: 10.0.0.1/28
+- type: Allow
+  to:
+    dnsName: centralizedlogging.dev.mycompany.com
+- type: Allow
+  to:
+    dnsName: vault.dev.mycompany.com
+- type: Allow
+  to:
+    dnsName: metrics.dev.mycompany.com
+- type: Allow
+  to:
+    cidrSelector: 10.0.0.1/28
   ports:
   - protocol: TCP
     port: 443

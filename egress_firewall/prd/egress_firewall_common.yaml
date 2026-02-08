@@ -1,12 +1,16 @@
 #These rules will be appended to all namespaces created in prd kubernetes clusters
-- egressType: dnsName
-  egressValue: centralizedlogging.prd.mycompany.com
-- egressType: dnsName
-  egressValue: vault.prd.mycompany.com
-- egressType: dnsName
-  egressValue: metrics.prd.mycompany.com
-- egressType: cidrSelector
-  egressValue: 10.3.0.1/28
+- type: Allow
+  to:
+    dnsName: centralizedlogging.prd.mycompany.com
+- type: Allow
+  to:
+    dnsName: vault.prd.mycompany.com
+- type: Allow
+  to:
+    dnsName: metrics.prd.mycompany.com
+- type: Allow
+  to:
+    cidrSelector: 10.0.0.1/28
   ports:
   - protocol: TCP
     port: 443

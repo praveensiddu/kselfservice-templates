@@ -1,5 +1,7 @@
 #Special rules allowed on a case by case basis for app1-ns1 in dev
-- egressType: dnsName
-  egressValue: s3.us-east-1.amazonaws.com
-- egressType: dnsName
-  egressValue: s3.us-west-2.amazonaws.com
+- type: Allow
+  to:
+    dnsName: s3.us-east-1.amazonaws.com
+- type: Allow
+  to:
+    dnsName: s3.us-west-2.amazonaws.com
