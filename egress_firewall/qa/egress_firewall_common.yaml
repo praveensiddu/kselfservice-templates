@@ -1,3 +1,4 @@
+#These rules will be appended to all namespaces created in qa kubernetes clusters
 - egressType: dnsName
   egressValue: centralizedlogging.qa.mycompany.com
 - egressType: dnsName
