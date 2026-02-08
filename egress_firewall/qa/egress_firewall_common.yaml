@@ -1,0 +1,11 @@
+- egressType: dnsName
+  egressValue: centralizedlogging.qa.mycompany.com
+- egressType: dnsName
+  egressValue: vault.qa.mycompany.com
+- egressType: dnsName
+  egressValue: metrics.qa.mycompany.com
+- egressType: cidrSelector
+  egressValue: 10.2.0.1/28
+  ports:
+  - protocol: TCP
+    port: 443

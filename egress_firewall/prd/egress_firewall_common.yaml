@@ -1,0 +1,11 @@
+- egressType: dnsName
+  egressValue: centralizedlogging.prd.mycompany.com
+- egressType: dnsName
+  egressValue: vault.prd.mycompany.com
+- egressType: dnsName
+  egressValue: metrics.prd.mycompany.com
+- egressType: cidrSelector
+  egressValue: 10.3.0.1/28
+  ports:
+  - protocol: TCP
+    port: 443
